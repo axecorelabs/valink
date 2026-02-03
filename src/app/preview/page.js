@@ -47,8 +47,8 @@ export default function PreviewPage() {
       
       paystack.newTransaction({
         key: process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY,
-        email: `valentine_${data.pageId}@valink.app`,
-        amount: parseInt(process.env.NEXT_PUBLIC_PAYMENT_AMOUNT || '50000'),
+        email: formData.email,
+        amount: parseInt(process.env.NEXT_PUBLIC_PAYMENT_AMOUNT || '100000'),
         reference: data.paymentReference,
         onSuccess: (transaction) => {
           // Redirect to success page
