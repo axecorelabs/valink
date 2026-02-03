@@ -21,6 +21,15 @@ export const metadata = {
     title: "Valentine Link Generator 💘",
     description: "Create a cute Valentine page in 30 seconds",
   },
+  icons: {
+    icon: [
+      { url: "/valink.png", sizes: "32x32", type: "image/png" },
+      { url: "/valink.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: [
+      { url: "/valink.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
