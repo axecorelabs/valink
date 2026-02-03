@@ -1,9 +1,10 @@
 'use client';
 
+import { Suspense } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 
-export default function Home() {
+function HomeContent() {
   const searchParams = useSearchParams();
   const refCode = searchParams.get('ref');
   const createPageUrl = refCode ? `/create?ref=${refCode}` : '/create';
@@ -56,5 +57,20 @@ export default function Home() {
         </p>
       </main>
     </div>
+  );
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={
+      <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-pink-50 via-red-50 to-pink-100">
+        <div className="text-center">
+          <div className="mb-4 text-6xl">💘</div>
+          <p className="text-gray-600">Loading...</p>
+        </div>
+      </div>
+    }>
+      <HomeContent />
+    </Suspense>
   );
 }
