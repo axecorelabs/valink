@@ -16,7 +16,6 @@ You need to configure `.env.local` with:
 
 ```env
 # MongoDB Connection
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/valentine?retryWrites=true&w=majority
 
 # Paystack Keys (Get from https://dashboard.paystack.com/#/settings/developers)
 NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY=pk_test_xxxxxxxxxxxxx
