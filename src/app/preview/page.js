@@ -117,7 +117,7 @@ export default function PreviewPage() {
                 <span>Processing...</span>
               </>
             ) : (
-              'Continue to Payment (₦200)'
+              'Continue to Payment (₦1,000)'
             )}
           </button>
         </div>

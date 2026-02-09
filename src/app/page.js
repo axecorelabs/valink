@@ -53,7 +53,7 @@ function HomeContent() {
 
         {/* Pricing */}
         <p className="mt-6 text-sm text-gray-600">
-          One-time payment · ₦200 · Link active until Feb 15
+          One-time payment · ₦1000 · Link active until Feb 15
         </p>
       </main>
     </div>
