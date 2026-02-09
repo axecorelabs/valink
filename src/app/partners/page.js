@@ -133,12 +133,12 @@ export default function PartnersPage() {
           </p>
           
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <button
+            {/* <button
               onClick={() => setShowRegisterForm(true)}
               className="rounded-full bg-gradient-to-r from-pink-500 to-red-500 px-8 py-4 text-lg font-bold text-white shadow-lg transition-all hover:scale-105"
             >
               Become a Partner
-            </button>
+            </button> */}
             <button
               onClick={() => setShowLoginModal(true)}
               className="rounded-full border-2 border-pink-500 bg-white px-8 py-4 text-lg font-bold text-pink-600 transition-all hover:bg-pink-50"
@@ -494,7 +494,7 @@ export default function PartnersPage() {
               </button>
             </form>
 
-            <p className="mt-4 text-center text-sm text-gray-600">
+            {/* <p className="mt-4 text-center text-sm text-gray-600">
               Don't have an account?{' '}
               <button
                 onClick={() => {
@@ -505,7 +505,7 @@ export default function PartnersPage() {
               >
                 Register here
               </button>
-            </p>
+            </p> */}
           </motion.div>
         </div>
       )}
